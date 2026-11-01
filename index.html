@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>互动编程作品集 · 郑可滢</title>
+  <meta name="description" content="数字媒体艺术专业《互动编程》课程作品集：p5.js 几何构成、Three.js 3D 游戏、作品集网站。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- 导航 -->
+  <nav class="nav" id="nav">
+    <a class="nav__brand" href="#hero">郑可滢<span>· IP</span></a>
+    <button class="nav__toggle" id="navToggle" aria-label="菜单">☰</button>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="#hero" class="active">首页</a></li>
+      <li><a href="#about">关于</a></li>
+      <li><a href="#work1">作业一</a></li>
+      <li><a href="#work2">作业二</a></li>
+      <li><a href="#work3">作业三</a></li>
+    </ul>
+  </nav>
+
+  <!-- 首页 Hero -->
+  <header class="hero" id="hero">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="hero__inner">
+      <p class="hero__kicker">数字媒体艺术专业 · 2026 秋季学期</p>
+      <h1 class="hero__title">互动编程<br /><span>作品集</span></h1>
+      <p class="hero__lead">从几何构成到 3D 游戏——一学期的创意代码实践。<br />作者：郑可滢</p>
+      <div class="hero__cta">
+        <a class="btn btn--primary" href="#work1">查看作品 ↓</a>
+        <a class="btn btn--ghost" href="#about">关于课程</a>
+      </div>
+    </div>
+    <div class="hero__scroll" aria-hidden="true">↓</div>
+  </header>
+
+  <main>
+    <!-- 关于 -->
+    <section class="section" id="about">
+      <div class="section__head reveal">
+        <span class="section__no">00</span>
+        <h2 class="section__title">关于本课程</h2>
+      </div>
+      <div class="about">
+        <div class="about__text reveal">
+          <p>《互动编程》以 <strong>p5.js</strong> 与 <strong>Three.js</strong> 为工具，将代码视作一种艺术媒介，探索生成、交互与实时的视觉表达。</p>
+          <p>本作品集汇总课程中三个阶段性作业：从最基础的几何构成，到可玩的 3D 游戏，再到汇总前两者、并作为期末大作业（权重 60%）的本作品集网站。</p>
+        </div>
+        <ul class="about__cards">
+          <li class="card reveal">
+            <span class="card__tag">作业一 · 20%</span>
+            <h3>p5.js 几何构成</h3>
+            <p>静态结构与动态交互两套几何语言。</p>
+          </li>
+          <li class="card reveal">
+            <span class="card__tag">作业二</span>
+            <h3>Three.js 3D 游戏</h3>
+            <p>「像素猎手」3D Roguelike 生存射击。</p>
+          </li>
+          <li class="card reveal">
+            <span class="card__tag">作业三 · 60%</span>
+            <h3>作品集网站</h3>
+            <p>你正在浏览的这份期末汇总。</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 作业一 -->
+    <section class="section" id="work1">
+      <div class="section__head reveal">
+        <span class="section__no">01</span>
+        <h2 class="section__title">作业一 · p5.js 几何构成</h2>
+      </div>
+      <div class="work">
+        <div class="work__intro reveal">
+          <p>两份 p5.js 作品，用同一套包豪斯式几何语言做对照：</p>
+          <ul class="work__points">
+            <li><strong>几何构成（静态）</strong>：仅用形状、颜色、位置构图；<code>setup()</code> 中 <code>noLoop()</code> 一次性绘制，无动画循环。</li>
+            <li><strong>几何构成（动态）</strong>：引入 <code>draw()</code> 循环，画面随时间与交互实时变化。</li>
+          </ul>
+          <p class="work__tech">技术：p5.js · 形状 / 颜色 / 位置 / 时间 · 实时交互</p>
+          <a class="btn btn--ghost" href="https://juhoon1018.github.io/ip-01-p5-works/" target="_blank" rel="noopener">在新标签页打开 ↗</a>
+        </div>
+        <div class="work__frames reveal">
+          <figure class="frame">
+            <figcaption>静态 · 几何构成</figcaption>
+            <iframe loading="lazy" src="https://juhoon1018.github.io/ip-01-p5-works/static.html" title="几何构成 静态"></iframe>
+          </figure>
+          <figure class="frame">
+            <figcaption>动态 · 几何构成</figcaption>
+            <iframe loading="lazy" src="https://juhoon1018.github.io/ip-01-p5-works/dynamic.html" title="几何构成 动态"></iframe>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 作业二 -->
+    <section class="section" id="work2">
+      <div class="section__head reveal">
+        <span class="section__no">02</span>
+        <h2 class="section__title">作业二 · Three.js 3D 游戏</h2>
+      </div>
+      <div class="work work--reverse">
+        <div class="work__intro reveal">
+          <p><strong>像素猎手 · PIXEL HUNTER 3D</strong>：一个俯视角竞技场的 3D Roguelike 生存射击游戏。</p>
+          <ul class="work__points">
+            <li>WASD 移动 · 鼠标瞄准射击 · 空格冲刺闪避</li>
+            <li>4 类敌人（史莱姆 / 蝙蝠 / 射手 / 坦克）对应不同形状与行为</li>
+            <li>击杀掉落经验宝石 → 升级 → 强化卡牌循环</li>
+            <li>右键拖拽旋转视角 · 滚轮缩放</li>
+          </ul>
+          <p class="work__tech">技术：Three.js（WebGL）· MeshStandardMaterial · 光照 · OrbitControls · 本地依赖离线可运行</p>
+          <a class="btn btn--ghost" href="https://juhoon1018.github.io/ip-02-three-game/" target="_blank" rel="noopener">在新标签页打开 ↗</a>
+        </div>
+        <div class="work__frames reveal">
+          <figure class="frame frame--wide">
+            <figcaption>像素猎手 · 3D 游戏</figcaption>
+            <iframe loading="lazy" src="https://juhoon1018.github.io/ip-02-three-game/" title="像素猎手 3D 游戏"></iframe>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 作业三 -->
+    <section class="section" id="work3">
+      <div class="section__head reveal">
+        <span class="section__no">03</span>
+        <h2 class="section__title">作业三 · 本作品集网站</h2>
+      </div>
+      <div class="about">
+        <div class="about__text reveal">
+          <p>这正是你正在浏览的页面——课程期末大作业（权重 60%）。</p>
+          <p>它以单页滚动的形式，把前两个作业以<strong>可交互的实时画面</strong>（iframe 嵌入已部署的在线作品）直接呈现，而非静态截图，便于评审即时体验。</p>
+          <p class="work__tech">技术：纯 HTML / CSS / JavaScript · 部署于 GitHub Pages · 响应式</p>
+          <a class="btn btn--ghost" href="https://github.com/juhoon1018/ip-03-portfolio" target="_blank" rel="noopener">查看仓库源码 ↗</a>
+        </div>
+        <ul class="about__cards">
+          <li class="card reveal">
+            <span class="card__tag">首页</span>
+            <h3>概览与导航</h3>
+            <p>课程定位与三个作业的速览卡片。</p>
+          </li>
+          <li class="card reveal">
+            <span class="card__tag">作品</span>
+            <h3>实时嵌入</h3>
+            <p>作业一 / 二以在线画面直接呈现。</p>
+          </li>
+          <li class="card reveal">
+            <span class="card__tag">交付</span>
+            <h3>可提交</h3>
+            <p>公开仓库 + Pages，附演示 PPT。</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <span>《互动编程》作品集 · 郑可滢</span>
+      <span class="footer__links">
+        <a href="https://github.com/juhoon1018/ip-01-p5-works" target="_blank" rel="noopener">作业一</a>
+        <a href="https://github.com/juhoon1018/ip-02-three-game" target="_blank" rel="noopener">作业二</a>
+        <a href="https://github.com/juhoon1018/ip-03-portfolio" target="_blank" rel="noopener">作业三</a>
+      </span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
